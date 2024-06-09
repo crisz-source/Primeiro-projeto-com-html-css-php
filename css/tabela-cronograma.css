@@ -1,0 +1,58 @@
+/* Estilos para a tabela */
+.tabela-cronograma {
+    width: 80%; /* Largura da tabela */
+    margin: 50px auto; /* Centraliza a tabela na tela e adiciona espaço acima */
+    border-collapse: collapse;
+    border: 1px solid #000; /* Adiciona borda à tabela */
+   
+}
+
+
+/* Estilos para as células da tabela */
+.tabela-celula {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #000; /* Adiciona borda inferior a cada célula */
+   
+}
+
+/* Estilos para as linhas da tabela (exceto o cabeçalho) */
+.tabela-linha-cronograma:nth-child(even) {
+    background-color: #000; /* Cor de fundo para as linhas pares */
+    color: #fff; /* Cor do texto nas linhas pares */
+}
+
+.tabela-linha-cronograma:nth-child(odd) {
+    background-color: #f0ae0773; /* Cor de fundo para as linhas ímpares */
+}
+
+/* Estilos para as colunas da tabela */
+.tabela-coluna-cronograma {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000; /* Adiciona borda à direita das colunas */
+    background-color: #000; /* Cor de fundo para as colunas do cabeçalho */
+    color: #fff; /* Cor do texto no cabeçalho */
+}
+
+/* Estilos para as linhas da tabela (exceto o cabeçalho) */
+.tabela-linha-cronograma:nth-child(even) {
+    background-color:  rgb(31, 24, 24); /* Cor de fundo para as linhas pares */
+}
+
+/* Estilos para o cabeçalho da tabela */
+.tabela-linha-cronograma th {
+    background-color: rgb(31, 24, 24); /* Cor de fundo para as células de cabeçalho */
+}
+
+/* Estilos para as células das colunas, exceto a última */
+.tabela-cronograma td:not(:last-child) {
+    border-right: 1px solid #000; /* Adiciona borda à direita das células, exceto na última coluna */
+}
+
+.tabela-titulo-cronograma{
+    text-align: center;
+    padding-top: 1rem;
+}
+

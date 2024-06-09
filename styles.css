@@ -1,0 +1,344 @@
+/* Reset de estilos básicos */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('background.jpg'); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho da sua imagem */
+    background-size: cover; /* Cobrir toda a área do corpo */
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    background-attachment: fixed; /* Fixar a imagem para que ela não role com o conteúdo */
+    color: #333;
+  }
+  
+  /* Estilos básicos do layout */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff; /* Cor de fundo desejada */
+    transition: background-color 0.3s ease; /* Efeito de transição */
+    color: #333;
+  }
+  
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffd700;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  nav ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  nav ul li a:hover {
+    color: #ffd700;
+  }
+
+  /*titulo */
+
+  .title a {
+    text-align: center;
+    margin-top: 250px; /* Ajuste a margem conforme necessário */
+
+    color: #fff;
+  }
+  
+  .title a {
+    font-size: 60px;
+  }
+  
+  .underline {
+    width: 100px; /* Largura da linha */
+    height: 2px; /* Altura da linha */
+    background-color: #ffd700; /* Cor da linha */
+    margin: 10px auto; /* Espaçamento entre o título e a linha */
+  }
+
+  /* btn jogue agora */
+
+  .btn-download {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(240, 240, 240, 0.082); /* Cor amarela transparente */
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.9s ease;
+  }
+  
+  .btn-download:hover {
+    background-color: #222;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .underline {
+    width: 100px; /* Largura da linha */
+    height: 2px; /* Altura da linha */
+    background-color: #ffd700; /* Cor da linha */
+    margin: 10px auto; /* Espaçamento entre o título e a linha */
+  }
+
+
+ /* Estilos para a tabela de top 10 jogadores */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da viewport */
+  }
+  
+  .top-players {
+    text-align: center;
+  }
+  
+  .top-players h2 {
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .top-players table {
+    width: 80%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  .top-players th,
+  .top-players td {
+    border: 1px solid  #fff;
+    padding: 8px;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .top-players th {
+    background-color: #222;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  /* cadastro */ 
+.container {
+  text-align: center;
+
+
+}
+
+.signup-form {
+  width: 300px;
+  padding: 30px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffd700;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #ffcc00;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup-form {
+  width: 300px;
+  padding: 50px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom:300px; /* Adicionando margem na parte inferior do formulário */
+  margin-top: 30px; /* Adicionando margem na parte superior do formulário */
+
+  border-radius: 10px;
+}
+
+
+/* area de doação no site */ 
+.donation-text {
+  text-align: center;
+  margin-top: 50px; /* Espaço acima do texto */
+  color: #fff;
+  font-size: 25px;
+}
+
+.donation-buttons {
+  text-align: center;
+  margin-top: 30px; /* Espaço acima dos botões */
+}
+
+.donation-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px; /* Espaço entre as linhas de botões */
+}
+
+.donate-btn {
+  padding: 20px;
+  margin: 0 10px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+  width: 200px;
+  font-size: 20px;
+}
+
+.donate-btn:hover {
+  background-color: #ffcc00; /* Cor do botão ao passar o mouse */
+}
+
+
+/* download */ 
+.download-section {
+  text-align: center;
+  margin-top: 50px; /* Espaço acima do conteúdo */
+  color: #fff;
+}
+
+.download-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px; /* Espaço acima do link */
+  background-color: #ffd700;
+  color: #222;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.1s ease;
+  background-image: url('./mediafire.png');
+  background-position: left;
+  background-size: 40px;
+  background-repeat: no-repeat;
+
+}
+
+.download-link:hover {
+  background-color: #ffcc00; /* Cor do botão ao passar o mouse */
+}
+
+.download-link span{
+  padding-left: 25px;
+  font-size: 20px;
+}
+
+/*discord*/
+ .discord-section {
+  text-align: center;
+  margin-top: 50px; /* Espaço acima do conteúdo */
+}
+
+.discord-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px; /* Espaço acima do link */
+  background-color: #7289da; /* Cor padrão do Discord */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.discord-link:hover {
+  background-color: #677bc4; /* Cor do botão ao passar o mouse */
+}
+
+
+
+

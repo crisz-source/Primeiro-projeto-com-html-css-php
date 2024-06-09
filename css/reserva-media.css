@@ -1,0 +1,972 @@
+
+@media screen and (max-width: 2024px) {
+
+    #menu-toggle{
+        display: none;
+    }
+    
+    hr{
+        display: none;
+    }
+    
+   
+}
+
+@media screen and (max-width: 920px) {
+
+  nav {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background-color: #222;
+      margin-top: 20px;
+    }
+  
+    
+    /* Estilo do botão para abrir o menu */
+    #menu-toggle {
+      display: block;
+      cursor: pointer;
+      padding: 20px;
+      color: white;
+      border: none;
+      margin: 2rem 0 2rem 1rem;
+    }
+
+    .bx-menu {
+      font-size: 32px; /* Tamanho desejado */
+    }
+  
+    /* Estilo do menu quando aberto */
+    nav.active {
+      display: flex;
+      flex-direction: column;
+    }
+    .menu {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+      color: #FFF2E7;
+  }
+  
+    .menu {
+      margin-top: 1rem ;
+      text-align: center;
+    }
+
+    .menu li a{
+      color: #fff;
+    }
+  
+    .menu li {
+      margin-bottom: 1rem;
+    }
+  
+    .menu li a {
+      display: block;
+      padding: 0.5rem 0;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .header-topo-cor{
+      padding: 1px;
+      background-color: #181012;
+  }
+
+  hr{
+      color: #A45A49;
+  }
+
+  nav {
+      padding: 1.5rem 2rem; /* Reduzir o padding do menu */
+    }
+
+    /* acima dessa linha ********************************** */
+  
+    .hero {
+      flex-direction: column; /* Mudar para layout de coluna */
+      height: auto; /* Altura automática */
+      padding: 2rem 1rem; /* Ajustar o padding */
+      gap: 3rem; /* Aumentar o espaço entre os elementos */
+    }
+  
+    .hero-container-imagens {
+      column-count: 1; /* Uma coluna para imagens */
+      column-gap: 0; /* Sem espaço entre as imagens */
+    }
+  
+    .hero-container-imagens > figure > img {
+      width: 100%; /* Preencher toda a largura disponível */
+      height: auto; /* Altura automática */
+    }
+  
+    .ultimas-noticias {
+      padding: 2rem 1rem; /* Ajustar o padding */
+    }
+  
+    .noticia-card-container {
+      justify-content: center; /* Centralizar os cards */
+    }
+  
+    .noticia-card {
+      flex-basis: 100%; /* Largura total para um card por linha */
+    }
+
+    .main-cadastro {
+        padding: 80px 20px 29rem; /* Ajustar o padding */
+        min-height: auto; /* Altura automática */
+      }
+    
+      .wrapper .form-box,
+      .wrapper .info-text {
+        padding: 5px; /* Reduzir ainda mais o padding para economizar espaço */
+      }
+    
+      .info-text h2,
+      .form-box h2 {
+        font-size: 18px; /* Reduzir mais o tamanho do título */
+      }
+    
+      .form-box .input-box,
+      .form-box .input-box label,
+      .form-box .input-box i,
+      .form-box .input-box input,
+      .btn,
+      .criarreg-link {
+        margin: 5px 0; /* Margens ainda mais reduzidas */
+      }
+    
+      .criarreg-link p a {
+        font-size: 12px; /* Reduzir o tamanho do texto do link */
+      }
+
+      .form-box,
+      .info-text {
+        padding: 5px; /* Reduzir o padding */
+      }
+    
+      h2 {
+        font-size: 18px; /* Reduzir o tamanho do título */
+      }
+    
+      .input-box,
+      label,
+      i,
+      input,
+      .btn,
+      .criarreg-link {
+        margin: 5px 0; /* Reduzir as margens */
+      }
+    
+      .animacao {
+        --i: 0.5; /* Diminuir o valor de animação */
+      }
+    
+      .criarreg-link p a {
+        font-size: 18px; /* Reduzir o tamanho do texto do link */
+      }
+
+      /*novos */
+
+      /* animacao 1 */
+      .wrapper .cadastro-animacao{
+          position:absolute;
+          top: -4px;
+          right: 0;
+          width: 850px;
+          height: 600px;
+      
+          /*degradê da cor da faixa */
+          background: linear-gradient(45deg, #2c0c15, rgb(0, 5, 6));
+         
+      
+      
+          border-bottom: 3px solid red;
+          transform: rotate(10deg) skewY(57deg);
+          transform-origin: bottom right;
+      
+          transition: 1.5s ease;
+      }
+
+      .input-box input {
+          width: 100%;
+          height: 100%;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          border-bottom: 2px solid #fff;
+          padding-right: 23px;
+          font-size: 16px;
+          color: #fff;
+          font-weight: 500;
+          transition: .5s;
+      }
+      
+      .wrapper .form-box.criar-conta {
+  left: 0;
+  padding: 0 30px 0 20px;
+}
+
+.animacao{
+  margin-bottom: 1rem;
+}
+
+.form-box .input-box {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  margin: 30px 0;
+}
+
+.form-box .criarreg-link {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  margin: 22px 0 10px;
+}
+
+
+.wrapper .info-text.criar-conta {
+  right: 0;
+  text-align: right;
+  padding: 0 40px 60px 50px;
+}
+
+
+/*animacao2*/
+
+.wrapper .form-box.alterar-senha {
+  right: 0;
+  padding: 0 40px 0 35px;
+}
+
+.wrapper.active .cadastro-animacao2{
+  transform: rotate(-11deg) skewY(-59deg);
+  transition-delay: 1.3s;
+}
+
+
+.wrapper .info-text.alterar-senha {
+  left: 0;
+  text-align: left;
+  padding: 0 90px 30px 20px;
+  pointer-events: none;
+}
+
+       /* estilo para tabela responsiva */
+     
+        table {
+          width: 100%; /* Define a largura da tabela como 100% da largura disponível */
+          max-width: none; /* Remove o máximo de largura definido anteriormente */
+          font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
+        }
+
+    
+      th,
+      td {
+        padding: 8px; /* Reduza o espaçamento interno das células */
+        font-size: 12px; /* Reduza o tamanho da fonte para telas menores */
+      }
+    
+      .button-container {
+        padding-bottom: 20px; /* Ajuste no espaçamento dos botões */
+      }
+    
+      .btn-voltar,
+      .btn-num,
+      .btn-prox {
+        font-size: 14px; /* Reduza o tamanho dos botões para telas menores */
+        padding: 6px 10px; /* Reduza o padding dos botões */
+        margin: 0 2px; /* Ajuste no espaçamento entre os botões */
+      }
+
+
+
+
+      
+  }
+
+
+@media screen and (max-width: 720px) {
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #222;
+        margin-top: 20px;
+      }
+    
+      
+      /* Estilo do botão para abrir o menu */
+      #menu-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 20px;
+        color: white;
+        border: none;
+        margin: 2rem 0 2rem 1rem;
+      }
+
+      .bx-menu {
+        font-size: 32px; /* Tamanho desejado */
+      }
+    
+      /* Estilo do menu quando aberto */
+      nav.active {
+        display: flex;
+        flex-direction: column;
+      }
+      .menu {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        color: #FFF2E7;
+    }
+    
+      .menu {
+        margin-top: 1rem ;
+        text-align: center;
+      }
+
+      .menu li a{
+        color: #fff;
+      }
+    
+      .menu li {
+        margin-bottom: 1rem;
+      }
+    
+      .menu li a {
+        display: block;
+        padding: 0.5rem 0;
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .header-topo-cor{
+        padding: 1px;
+        background-color: #181012;
+    }
+
+    hr{
+        color: #A45A49;
+    }
+
+    nav {
+        padding: 1.5rem 2rem; /* Reduzir o padding do menu */
+      }
+
+      /* acima dessa linha ********************************** */
+    
+      .hero {
+        flex-direction: column; /* Mudar para layout de coluna */
+        height: auto; /* Altura automática */
+        padding: 2rem 1rem; /* Ajustar o padding */
+        gap: 3rem; /* Aumentar o espaço entre os elementos */
+      }
+    
+      .hero-container-imagens {
+        column-count: 1; /* Uma coluna para imagens */
+        column-gap: 0; /* Sem espaço entre as imagens */
+      }
+    
+      .hero-container-imagens > figure > img {
+        width: 100%; /* Preencher toda a largura disponível */
+        height: auto; /* Altura automática */
+      }
+    
+      .ultimas-noticias {
+        padding: 2rem 1rem; /* Ajustar o padding */
+      }
+    
+      .noticia-card-container {
+        justify-content: center; /* Centralizar os cards */
+      }
+    
+      .noticia-card {
+        flex-basis: 100%; /* Largura total para um card por linha */
+      }
+  
+      .main-cadastro {
+          padding: 80px 20px 29rem; /* Ajustar o padding */
+          min-height: auto; /* Altura automática */
+        }
+      
+        .wrapper .form-box,
+        .wrapper .info-text {
+          padding: 5px; /* Reduzir ainda mais o padding para economizar espaço */
+        }
+      
+        .info-text h2,
+        .form-box h2 {
+          font-size: 18px; /* Reduzir mais o tamanho do título */
+        }
+      
+        .form-box .input-box,
+        .form-box .input-box label,
+        .form-box .input-box i,
+        .form-box .input-box input,
+        .btn,
+        .criarreg-link {
+          margin: 5px 0; /* Margens ainda mais reduzidas */
+        }
+      
+        .criarreg-link p a {
+          font-size: 12px; /* Reduzir o tamanho do texto do link */
+        }
+
+        .form-box,
+        .info-text {
+          padding: 5px; /* Reduzir o padding */
+        }
+      
+        h2 {
+          font-size: 18px; /* Reduzir o tamanho do título */
+        }
+      
+        .input-box,
+        label,
+        i,
+        input,
+        .btn,
+        .criarreg-link {
+          margin: 5px 0; /* Reduzir as margens */
+        }
+      
+        .animacao {
+          --i: 0.5; /* Diminuir o valor de animação */
+        }
+      
+        .criarreg-link p a {
+          font-size: 18px; /* Reduzir o tamanho do texto do link */
+        }
+
+        /*novos */
+
+        /* animacao 1 */
+        .wrapper .cadastro-animacao{
+            position:absolute;
+            top: -4px;
+            right: 0;
+            width: 850px;
+            height: 600px;
+        
+            /*degradê da cor da faixa */
+            background: linear-gradient(45deg, #2c0c15, rgb(0, 5, 6));
+           
+        
+        
+            border-bottom: 3px solid red;
+            transform: rotate(10deg) skewY(57deg);
+            transform-origin: bottom right;
+        
+            transition: 1.5s ease;
+        }
+
+        .input-box input {
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #fff;
+            padding-right: 23px;
+            font-size: 16px;
+            color: #fff;
+            font-weight: 500;
+            transition: .5s;
+        }
+        
+        .wrapper .form-box.criar-conta {
+    left: 0;
+    padding: 0 30px 0 20px;
+}
+
+.animacao{
+    margin-bottom: 1rem;
+}
+
+.form-box .input-box {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin: 30px 0;
+}
+
+.form-box .criarreg-link {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    margin: 22px 0 10px;
+}
+
+
+.wrapper .info-text.criar-conta {
+    right: 0;
+    text-align: right;
+    padding: 0 40px 60px 50px;
+}
+
+
+/*animacao2*/
+
+.wrapper .form-box.alterar-senha {
+    right: 0;
+    padding: 0 40px 0 35px;
+}
+
+.wrapper.active .cadastro-animacao2{
+    transform: rotate(-11deg) skewY(-59deg);
+    transition-delay: 1.3s;
+}
+
+
+.wrapper .info-text.alterar-senha {
+    left: 0;
+    text-align: left;
+    padding: 0 90px 30px 20px;
+    pointer-events: none;
+}
+
+       /* estilo para tabela responsiva */
+       table {
+        table {
+          width: 100%; /* Define a largura da tabela como 100% da largura disponível */
+          max-width: none; /* Remove o máximo de largura definido anteriormente */
+          font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
+        }
+      }
+    
+      th,
+      td {
+        padding: 8px; /* Reduza o espaçamento interno das células */
+        font-size: 12px; /* Reduza o tamanho da fonte para telas menores */
+      }
+    
+      .button-container {
+        padding-bottom: 20px; /* Ajuste no espaçamento dos botões */
+      }
+    
+      .btn-voltar,
+      .btn-num,
+      .btn-prox {
+        font-size: 14px; /* Reduza o tamanho dos botões para telas menores */
+        padding: 6px 10px; /* Reduza o padding dos botões */
+        margin: 0 2px; /* Ajuste no espaçamento entre os botões */
+      }
+
+      .frase {
+        display: block;
+        text-align: center;
+        color: #fff;
+        padding-top: 20px;
+        font-size: 24px;
+    }
+
+
+        
+    }
+
+    @media screen and (max-width: 520px) {
+
+        nav {
+          display: none;
+          flex-direction: column;
+          align-items: center;
+          background-color: #222;
+          margin-top: 20px;
+          padding: 1.5rem 1rem; /* Ajuste no padding */
+        }
+      
+        #menu-toggle {
+          display: block;
+          cursor: pointer;
+          padding: 20px;
+          color: white;
+          border: none;
+          margin: 2rem 0 2rem 1rem;
+        }
+      
+        nav.active {
+          display: flex;
+          flex-direction: column;
+        }
+      
+        .menu {
+          margin-top: 1rem;
+          text-align: center;
+        }
+      
+        .menu li a {
+          color: #fff;
+        }
+      
+        .menu li {
+          margin-bottom: 1rem;
+        }
+      
+        .menu li a {
+          display: block;
+          padding: 0.5rem 0;
+          text-decoration: none;
+          color: #fff;
+        }
+      
+        .header-topo-cor {
+          padding: 1px;
+          background-color: #181012;
+        }
+      
+        hr {
+          color: #a45a49;
+        }
+      
+        .hero {
+          flex-direction: column;
+          text-align: left;
+          height: auto;
+          padding: 2rem 0.5rem; /* Ajuste no padding */
+          gap: 3rem;
+        }
+      
+        .hero-container-imagens {
+          column-count: 1;
+          column-gap: 0;
+        }
+      
+        .hero-container-imagens > figure > img {
+          width: 100%;
+          height: auto;
+        }
+      
+        .ultimas-noticias {
+          padding: 2rem 0.5rem; /* Ajuste no padding */
+        }
+      
+        .noticia-card-container {
+          justify-content: center;
+        }
+      
+        .noticia-card {
+          flex-basis: 100%;
+        }
+      
+        .main-cadastro {
+          padding: 80px 20px 5rem; /* Ajuste no padding */
+          min-height: auto;
+        }
+      
+        .wrapper .form-box,
+        .wrapper .info-text {
+          padding: 5px;
+        }
+      
+        .info-text h2,
+        .form-box h2 {
+          font-size: 16px; /* Ajuste no tamanho do título */
+        }
+      
+        .form-box .input-box,
+        .form-box .input-box label,
+        .form-box .input-box i,
+        .form-box .input-box input,
+        .btn,
+        .criarreg-link {
+          margin: 3px 0; /* Ajuste nas margens */
+        }
+      
+        .criarreg-link p a {
+          font-size: 10px; /* Ajuste no tamanho do texto do link */
+        }
+      
+        .animacao {
+          --i: 0.3; /* Ajuste no valor de animação */
+        }
+
+
+
+        /*novos*/
+
+        .criarreg-link p a{
+            font-size: 15px;
+        }
+
+        /* estilo para tabela responsiva */
+        table {
+          table {
+            width: 100%; /* Define a largura da tabela como 100% da largura disponível */
+            max-width: none; /* Remove o máximo de largura definido anteriormente */
+            font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
+          }
+        }
+      
+        th,
+        td {
+          padding: 8px; /* Reduza o espaçamento interno das células */
+          font-size: 12px; /* Reduza o tamanho da fonte para telas menores */
+        }
+      
+        .button-container {
+          padding-bottom: 20px; /* Ajuste no espaçamento dos botões */
+        }
+      
+        .btn-voltar,
+        .btn-num,
+        .btn-prox {
+          font-size: 14px; /* Reduza o tamanho dos botões para telas menores */
+          padding: 6px 10px; /* Reduza o padding dos botões */
+          margin: 0 2px; /* Ajuste no espaçamento entre os botões */
+        }
+
+        .frase {
+          display: block;
+          text-align: center;
+          color: #fff;
+          padding-top: 20px;
+          font-size: 24px;
+      }
+      
+      }
+
+      @media screen and (max-width: 420px) {
+
+        nav {
+          display: none;
+          flex-direction: column;
+          align-items: center;
+          background-color: #222;
+          margin-top: 20px;
+          padding: 1.5rem 1rem; /* Ajuste no padding */
+        }
+      
+        #menu-toggle {
+          display: block;
+          cursor: pointer;
+          padding: 20px;
+          color: white;
+          border: none;
+          margin: 2rem 0 2rem 1rem;
+        }
+      
+        nav.active {
+          display: flex;
+          flex-direction: column;
+        }
+      
+        .menu {
+          margin-top: 1rem;
+          text-align: center;
+        }
+      
+        .menu li a {
+          color: #fff;
+        }
+      
+        .menu li {
+          margin-bottom: 1rem;
+        }
+      
+        .menu li a {
+          display: block;
+          padding: 0.5rem 0;
+          text-decoration: none;
+          color: #fff;
+        }
+      
+        .header-topo-cor {
+          padding: 1px;
+          background-color: #181012;
+        }
+      
+        hr {
+          color: #a45a49;
+        }
+      
+        .hero {
+          flex-direction: column;
+          text-align: left;
+          height: auto;
+          padding: 2rem 0.5rem; /* Ajuste no padding */
+          gap: 3rem;
+        }
+      
+        .hero-container-imagens {
+          column-count: 1;
+          column-gap: 0;
+        }
+      
+        .hero-container-imagens > figure > img {
+          width: 100%;
+          height: auto;
+        }
+      
+        .ultimas-noticias {
+          padding: 2rem 0.5rem; /* Ajuste no padding */
+        }
+      
+        .noticia-card-container {
+          justify-content: center;
+        }
+      
+        .noticia-card {
+          flex-basis: 100%;
+        }
+      
+        .main-cadastro {
+          padding: 80px 20px 5rem; /* Ajuste no padding */
+          min-height: auto;
+        }
+      
+        .wrapper .form-box,
+        .wrapper .info-text {
+          padding: 5px;
+        }
+      
+        .info-text h2,
+        .form-box h2 {
+          font-size: 16px; /* Ajuste no tamanho do título */
+        }
+      
+        .form-box .input-box,
+        .form-box .input-box label,
+        .form-box .input-box i,
+        .form-box .input-box input,
+        .btn,
+        .criarreg-link {
+          margin: 3px 0; /* Ajuste nas margens */
+        }
+      
+        .criarreg-link p a {
+          font-size: 10px; /* Ajuste no tamanho do texto do link */
+        }
+      
+        .animacao {
+          --i: 0.3; /* Ajuste no valor de animação */
+        }
+
+
+
+        /*novos*/
+
+        .criarreg-link p a{
+            font-size: 15px;
+        }
+
+        /* estilo para tabela responsiva */
+        table {
+          table {
+            width: 100%; /* Define a largura da tabela como 100% da largura disponível */
+            max-width: none; /* Remove o máximo de largura definido anteriormente */
+            font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
+          }
+        }
+      
+        th,
+        td {
+          padding: 8px; /* Reduza o espaçamento interno das células */
+          font-size: 12px; /* Reduza o tamanho da fonte para telas menores */
+        }
+      
+        .button-container {
+          padding-bottom: 20px; /* Ajuste no espaçamento dos botões */
+        }
+      
+        .btn-voltar,
+        .btn-num,
+        .btn-prox {
+          font-size: 14px; /* Reduza o tamanho dos botões para telas menores */
+          padding: 6px 10px; /* Reduza o padding dos botões */
+          margin: 0 2px; /* Ajuste no espaçamento entre os botões */
+        }
+
+        .frase {
+          display: block;
+          text-align: center;
+          color: #fff;
+          padding-top: 20px;
+          font-size: 24px;
+      }
+      
+      }
+      
+
+    @media screen and (max-width: 320px) {
+        /* Estilos para telas de até 320px */
+        nav {
+          padding: 1rem; /* Ajustar o padding do menu para 320px */
+        }
+    
+        /* Outras propriedades específicas para 320px */
+        .menu li {
+          margin-bottom: 0.5rem; /* Reduzir a margem inferior */
+        }
+    
+        .info-text h2,
+        .form-box h2 {
+          font-size: 16px; /* Reduzir ainda mais o tamanho do título */
+        }
+    
+        .input-box,
+        label,
+        i,
+        input,
+        .btn,
+        .criarreg-link {
+          margin: 3px 0; /* Margens mais reduzidas */
+        }
+    
+        .criarreg-link p a {
+          font-size: 10px; /* Reduzir ainda mais o tamanho do texto do link */
+        }
+
+               /* estilo para tabela responsiva */
+               table {
+                table {
+                  width: 100%; /* Define a largura da tabela como 100% da largura disponível */
+                  max-width: none; /* Remove o máximo de largura definido anteriormente */
+                  font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
+                }
+              }
+            
+              th,
+              td {
+                padding: 8px; /* Reduza o espaçamento interno das células */
+                font-size: 12px; /* Reduza o tamanho da fonte para telas menores */
+              }
+            
+              .button-container {
+                padding-bottom: 20px; /* Ajuste no espaçamento dos botões */
+              }
+            
+              .btn-voltar,
+              .btn-num,
+              .btn-prox {
+                font-size: 14px; /* Reduza o tamanho dos botões para telas menores */
+                padding: 6px 10px; /* Reduza o padding dos botões */
+                margin: 0 2px; /* Ajuste no espaçamento entre os botões */
+              }
+      
+              .frase {
+                display: block;
+                text-align: center;
+                color: #fff;
+                padding-top: 20px;
+                font-size: 24px;
+            }
+      }
+
+
+   
+      
+
+   
+
+ 
+
+
+
+  
+
+ 

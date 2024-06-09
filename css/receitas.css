@@ -1,0 +1,27 @@
+.receitas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5rem 0 0 5rem;
+
+    margin-bottom: 100px; /* ou qualquer outro valor que você considere adequado */
+   
+    
+}
+
+.receitas .receita .receita__conteudo .receita__titulo, .receita__descricao{
+    color: #000;
+}
+
+@media screen and (max-width: 768px) { /* Ajuste para telas menores */
+    .receita {
+        width: calc(50% - 40px); /* Ajusta para duas colunas em telas menores */
+    }
+}
+
+@media screen and (max-width: 480px) { /* Ajuste para telas ainda menores */
+    .receita {
+        width: calc(100% - 40px); /* Ajusta para uma coluna em telas muito pequenas */
+    }
+}
